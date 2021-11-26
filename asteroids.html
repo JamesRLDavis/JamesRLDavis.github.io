@@ -31,17 +31,33 @@
 										<h1>Asteroids</h1>
 									</header>
 
-									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
+									<span class="image main"><img src="images/asteroid-image.jpg" alt="" /></span>
 
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<p>This Asteroids game was a project coded in Visual Studio using a base game engine provided by the University, with the goal of producing a type
+									of game from a list. I had decided to produce Asteroids, but wanted to put extra features in to differentiate it from the original game. Primarily,
+									the player is able to boost while holding SHIFT, has a shield and collecting 20 pickups will spawn a boss, defeating the boss will provide an extra
+									shield and increase the points provided by a pickup, with the goal being to achieve as high a score as possible. Every time a shield is picked up,
+									the boss will begin to shoot faster. The bosses projectiles are unlike the players, as they produce mines when they hit asteroids. These mines do not
+									provide score when destroyed, and serve as a challenge for the player to avoid them while still fighting the boss. </p>
+									<p>The game went through various stages. Initially, there was heavy coupling between classes, as each object on the screen would originate from a different
+									class, but some were dependant on others. Such as the projectiles, which were used by both the Boss and Player. This meant changes to the projectile class would affect
+									either of the other classes. Then, Enumeration was used to determine the difference between certain objects when it came to these situations. This reduced the class
+									number down, as pickups and bullets could merge the variants into a single class. Next, and the final stage, components were implemented into the game. This meant that there were
+									no independant classes, instead it was components that used enumeration to determine behaviours (primarily for collisions), which were all handled by a single object manager. By 
+									assigning properties through these components, it was possible for each object to act differently. Such as using the collision component to define the hitboxes of both the asteroids,
+									bosses and player, or for the physics component to determine how fast objects were able to move.</p>
 
 									<hr class="major" />
 
-									<h2>Interdum sed dapibus</h2>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<h2>Further Work</h2>
+									<p>There are a few elements that can be expanded upon. The first of which is the lack of sound effects within the game. I chose to focus on the component infastructure, which did not provide a lot of time
+									to work with sounds. Additionally, adding variety to the enemies and asteroids would be a main goal. Currently, the only form of direct opposition is the boss, which only spawns after collecting
+									enough pickups. Using the components, it would be possible to create smaller enemy ships that have AI, while also using similar components to the player object, where they would
+									try and chase the player providing more difficulty and potentially more avenues for pickups. I had also wanted to implement special weapons, for instance the player defeats the boss,
+									pickup the special boss pickup and now they shoot faster or have an explosive shot. It would provide another form of variety that would make the player more interested in winning.</p>
+									<p>A fundamental bit of work would be developing the project to work independantly of Visual Studio. Due to the requirements of the assignment it was produced as, every student
+									had to setup their project with certain paramaters. This is so that when the project is marked, every entry is treated the same. This means that it is intended to run
+									in the Visual Studio command shell, not published as an EXE. Fixing this, or maybe even remaking it from scratch would be a priority.</p>
 
 									<ul class="actions">
 										<li><a href="https://github.com/JamesRLDavis/Asteroids" target="_blank" class="button">See More on Github</a></li>
@@ -73,30 +89,6 @@
 										</li>
 									</ul>
 								</nav>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>
 
 
 							<!-- Footer -->

@@ -31,17 +31,34 @@
 										<h1>The Room Conundrum</h1>
 									</header>
 
-									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
+									<span class="image main"><img src="images/room-image.jpg" alt="" /></span>
 
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<p>The Room Conundrum is the project that took the most time to complete during my studies at University. The work involved included a 
+									24 thousand word write-up about my study into The Turing Test (By Sir Alen Turing) which looked at the surrounding ideas that could be 
+									drawn from discourse around AI, as well as a look into Game Design, specifically analysing the designs of games within the game genre of Interactive Fiction.</p>
+									<p>Production on the game had multiple times where work had to be re-done. The aim was to produce a game similar to others within the Interactive Fiction genre, 
+									where text inputs were analyzed by text parsers to determine what the player is trying to do, and produce the same effect within Unreal Engine (as this was used 
+									in the prior year of Game Design teaching). This proved initially to be a tall task, as Unreal is not natively desinged for handling text as a means of gameplay. 
+									During the multiple iterations of the text handler, I eventually came to a suitable version that is being used in the game currently.</p>
+									<p>The document produced as part of the diseratation contains much more in-depth detail about the various workings of the system,
+									but it primarily uses a pre-inputted list of words that it needs to be looking out for. In order, it looks for an object within the phrase,
+									then an action, and if possible a second object. This sends the action and the second object to an "object handler", which can be found
+									in the class for any of the objects within the gameworld, which handles action as specified. It uses Polymorphism to create a system which
+									is loosely coupled as best as possible.</p>
 
 									<hr class="major" />
 
-									<h2>Interdum sed dapibus</h2>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<h2>Further Work</h2>
+									<p>While I am happy with the work produced, there are steps that can be taken to improve it so that it can stand more as a game than a university
+									project. Primarily, there is not much of a story. This is due to the focus on the technical prowess, rather than the story telling capabilities.
+									The scale of the gameworld is also limited to a single room with the various different objects to interact with, but as can be seen in other
+									Interactive Fictions, entire worlds can be created within these games that have multiple layers of depth when it comes to puzzles.
+									Additionally, work can be done on the models and textures within the game to clean them up and make it more easy on the eyes. At the time of
+									producing it (as has been mentioned already) focus was on the technical prowess as opposed to the graphical fidelity. Very few objects have
+									textures associated to them, and this is only because my work on the other Unreal Project covered the creation and use of them.</p>
+									<p>Another bit of work I would do if given the opportunity would be to change over from Unreal Blueprinting to C++ scripting. This would make it
+									much easier to implement the various object handlers in a cleaner fashion, as with the blueprints currently implemented it can be difficult
+									to determine what data is going where. </p>
 
 									<ul class="actions">
 										<li><a href="https://github.com/JamesRLDavis/The-Room-Conundrum" target="_blank" class="button">See More on Github</a></li>
@@ -74,30 +91,6 @@
 										</li>
 									</ul>
 								</nav>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>
 
 
 							<!-- Footer -->

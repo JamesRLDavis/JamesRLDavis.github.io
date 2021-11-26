@@ -31,17 +31,36 @@
 										<h1>Wildlife Simulator</h1>
 									</header>
 
-									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
+									<span class="image main"><img src="images/wildlife-image.jpg" alt="" /></span>
 
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<p>The Wildlife Simulator was created as part of a module that was intended to be done as a team. But, due to complications at the time, this
+									was done entirely solo. The aim of the module was to identify an audience, and then produce a piece of software that is relevant towards them.
+									One of the initial ideas was to make an educational game, which then expanded to what is currently the wildlife simulator. Taking inspiration from
+									games like Zoo Tycoon and Planet Zoo which both focus on the management aspect of handling animals, I wanted to produce something more simulator-esque,
+									where the player would be able to influence what happened, but the game primarily relied on the animal AI to work.</p>
+									<p>This project involved a lot of research. To facilitate the educational aspect, a lot of the planning stage was determining what habitat to emulate
+									and figuring out what animals would be living within it. I eventually settled for Subtropical dry shrubland, which can account for sections of Australia and Africa.
+									Improving upon the potential for the game to educate, a variety of facts about the animals within the game were acquired so that the player could know more about the environment
+									they were playing with. </p>
+									<p>All of the animal models were produced personally, using real-life images to create the finished low-poly versions. The bushes and trees were also done with reference to those
+									that can often be found within the habitat. An element of the game which is not immediately apparent is that everything within it (besides static objects in the envirionment)
+									has a "food" factor. As the animals walk around, they will get hungry and seek out the nearest form of food. For the elephants and wildebeests, they eat the plants and trees,
+									but for the jackals, caracals and lions, they eat any other creatures they can find (with jackals prioritizing dead animals over anything else). The animals will fight or flee
+									depending on what type they are. Elephants will stand their ground while the tiny Rock Hyrax will run (if it's still alive after one hit). While a basic system, it can show
+									the difference in environments replete with food, and those that are barely able to sustain the life there.</p>
 
 									<hr class="major" />
 
-									<h2>Interdum sed dapibus</h2>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<h2>Further Work</h2>
+									<p>One obvious bit of work that can be done is to add animations. Currently, static models will colide with each other and it is difficult to determine what they are doing.
+									This is due in part to the lack of knowledge on animations that I have, and if given the chance it would provide a good opportunity to learn how to do it. Additionally, implementing
+									a game level manager to properly determine when to add creatures and plants would have a lasting impact on the gameplay, as it would remove the need to constantly place new plants every minute.</p>
+									<p>Through the use of Polymorphism, there are plenty of ways to further develop the game, such as creating multiple environments to choose from, so that there is a variety
+									of animals and plants. Initially, when this project was to be done as a team, there were plans for each member to create a different environment, and then frame the entire game
+									as a zoo with the player choice on which habitat to work in. Committing to this would greatly improve the playability.</p>
+									<p>A major factor in making the animals move as they do is through the use of BTs (Behaviour Trees), the current behaviours that are implemented are simple, with some animals
+									using similar branches and sequences with minor differences to accomodate for the varying statistics associated with each one. To improve it, adding in a variety of behaviours,
+									such as pack-mentality, pre emptive fleeing and using multiple senses (sight, smell and sound) for determing actions to name a few.</p>
 
 									<ul class="actions">
 										<li><a href="https://github.com/JamesRLDavis/Wildlife-Simulator" target="_blank" class="button">See More on Github</a></li>
@@ -73,31 +92,6 @@
 										</li>
 									</ul>
 								</nav>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>
-
 
 							<!-- Footer -->
 								<footer id="footer">
